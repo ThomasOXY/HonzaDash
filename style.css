@@ -3,77 +3,216 @@ body {
   padding: 0;
 }
 
+/*
 .popup {
-  position: absolute;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Poppins", sans-serif;
-  background-color: #ebe7e7;
-  border-radius: 15px;
-  width: 30%;
-}
+    position: absolute;
+    right: 0;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(235, 231, 231);
+    border-radius: 15px;
+    width: 30%;
+    .row {
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+        gap: 0.3em;
 
-.popup .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  gap: 0.3em;
-}
+        h4 {
+            color: rgb(213, 43, 43);
+        }
+        p {
+            font-weight: 300;
+        }
+    }
 
-.popup .row h4 {
-  color: #d52b2b;
-}
-
-.popup .row p {
-  font-weight: 300;
-}
-
-.popup i {
-  padding: 0em 0.5em;
-  font-size: 2em;
-  color: #c32f2f;
+    i {
+        padding: 0em 0.5em;
+        font-size: 2em;
+        color: rgb(195, 47, 47);
+    }
 }
 
 .System {
+
+ 
+    .GameName{
+        padding: .5em;
+        color: rgb(59, 92, 242);
+    }
+    .Table{
+        font-family: "Montserrat", sans-serif;
+        margin-top: 10em;
+        margin-left: 10em;
+        background-color: rgb(225, 225, 225);
+        width: 35%;
+        border-radius: 15px;
+      display: flex;
+      flex-flow: column;
+  
+
+    }
+ 
+   
+.Sellers{
+    margin-top: -50px;
+    padding: 0em 1em;
+    display: flex;
+    flex-flow: column;
+    .seller{
+       margin-top: -35px;
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+        gap: 1em;
+   
+    }
+    .Info{
+        margin-top: -40px;
+ 
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+        gap: 1em;
+    }
+
+
+}
+.input{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+    background-color: rgb(225, 225, 225);
+    border-radius: 15%;
+    input{
+        width: 8em;
+        height: 2em;
+        border-radius: 15px;
+        text-align: center;
+        border: 2px solid rgb(59, 92, 242);
+        background-color: rgb(252, 252, 252);
+    }
+
+.buttons{
+    gap: 1em;
+    padding: 0em 1em;
+    display: flex;
+    flex-flow: column;
+
+    button{
+        width: 10em;
+        height: 3em;
+        background: transparent;
+        border-radius: 15px;
+    }
+    .drop{
+        color: rgb(190, 22, 22);
+        border: 2px solid rgb(190, 22, 22) ;
+    }
+    .Upload{
+        color: rgb(22, 190, 50);
+        border: 2px solid rgb(22, 190, 50) ;  
+    }
+    .Addkey{
+        color: rgb(190, 159, 22);
+        border: 2px solid rgb(190, 159, 22) ;  
+    }
+
+.drop:hover{
+transition: .3s;
+    background-color: rgb(190, 22, 22);
+    color: white;
+}
+
+.Upload:hover{
+    transition: .3s;
+    background-color:rgb(22, 190, 50) ;
+    color: white;
+}
+
+}
+
+}
+
+
+}
+
+.KeyPopUp{
+    margin-left: 10em;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(131, 131, 131);
+    width: 30%;
+    border-radius: 15px;
+}
+*/
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.InfoTab {
   font-family: "Montserrat", sans-serif;
   background-color: #e1e1e1;
-  width: 50%;
   border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-.System .GameName {
-  padding: .5em;
-  color: #3b5cf2;
-}
-
-.System .Table {
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  padding: 0em 1em;
 }
 
-.System .stock {
+.InfoTab .Left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.InfoTab .Actions {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.InfoTab .Head h1 {
+  color: #498bc9;
+}
+
+.InfoTab .StockCount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+
+.InfoTab .StockCount .item {
+  gap: .3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,9 +225,18 @@ body {
           align-items: center;
 }
 
-.System .stock .Info {
-  margin-top: -40px;
-  padding: 0em 1em;
+.InfoTab .Supply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.InfoTab .Supply .SuppItm {
+  margin-top: -2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,25 +250,16 @@ body {
   gap: 1em;
 }
 
-.System .Sellers {
-  padding: 0em 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-}
-
-.System .Sellers .seller {
-  margin-top: -35px;
+.InfoTab .Actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
@@ -128,21 +267,16 @@ body {
   gap: 1em;
 }
 
-.System .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+.InfoTab .Actions input {
+  width: 10em;
+  height: 2em;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid #3b5cf2;
+  background-color: #fcfcfc;
 }
 
-.System .input .buttons {
-  gap: 1em;
-  padding: 0em 1em;
+.InfoTab .Actions .btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,5 +284,84 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  gap: 1em;
+}
+
+.InfoTab .Actions .btns button {
+  width: 10em;
+  height: 3em;
+  background: transparent;
+  border-radius: 15px;
+}
+
+.InfoTab .Actions .btns .drop {
+  color: #be1616;
+  border: 2px solid #be1616;
+}
+
+.InfoTab .Actions .btns .Addkey {
+  color: #be9f16;
+  border: 2px solid #be9f16;
+}
+
+.InfoTab .Actions .btns .drop:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: #be1616;
+  color: white;
+}
+
+.InfoTab .Actions .btns .Addkey:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: #be9f16;
+  color: white;
+}
+
+.KeyPop {
+  width: 35%;
+  height: 20vh;
+  background-color: #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-shadow: 0px 14px 11px -3px rgba(176, 176, 176, 0.98);
+          box-shadow: 0px 14px 11px -3px rgba(176, 176, 176, 0.98);
+  gap: .3em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.KeyPop textarea {
+  border-radius: 15px;
+  background-color: #fcfcfc;
+  border: 2px solid #3b5cf2;
+}
+
+.KeyPop button {
+  width: 10em;
+  height: 3em;
+  background: transparent;
+  border-radius: 15px;
+}
+
+.KeyPop .Upload {
+  color: #16be32;
+  border: 2px solid #16be32;
+}
+
+.KeyPop .Upload:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: #16be32;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

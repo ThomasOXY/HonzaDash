@@ -1,7 +1,8 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+/*
 .popup {
     position: absolute;
     right: 0;
@@ -34,40 +35,28 @@ body {
 }
 
 .System {
-    font-family: "Montserrat", sans-serif;
 
-    background-color: rgb(225, 225, 225);
-    width: 50%;
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr  ;
+ 
     .GameName{
         padding: .5em;
         color: rgb(59, 92, 242);
     }
     .Table{
-        display: flex;
-        ;
-        
-        flex-flow: column;
+        font-family: "Montserrat", sans-serif;
+        margin-top: 10em;
+        margin-left: 10em;
+        background-color: rgb(225, 225, 225);
+        width: 35%;
+        border-radius: 15px;
+      display: flex;
+      flex-flow: column;
+  
+
     }
  
-    .stock{
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-        
-        .Info{
-            margin-top: -40px;
-            padding: 0em 1em ;
-            display: flex;
-            align-items: center;
-            flex-flow: row;
-            gap: 1em;
-        }
-    }   
+   
 .Sellers{
-    
+    margin-top: -50px;
     padding: 0em 1em;
     display: flex;
     flex-flow: column;
@@ -77,21 +66,230 @@ body {
         align-items: center;
         flex-flow: row;
         gap: 1em;
+   
     }
+    .Info{
+        margin-top: -40px;
+ 
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+        gap: 1em;
+    }
+
+
 }
 .input{
     display: flex;
     align-items: center;
-    justify-content: left;
+  justify-content: center;
+    background-color: rgb(225, 225, 225);
+    border-radius: 15%;
+    input{
+        width: 8em;
+        height: 2em;
+        border-radius: 15px;
+        text-align: center;
+        border: 2px solid rgb(59, 92, 242);
+        background-color: rgb(252, 252, 252);
+    }
 
 .buttons{
     gap: 1em;
     padding: 0em 1em;
     display: flex;
     flex-flow: column;
+
+    button{
+        width: 10em;
+        height: 3em;
+        background: transparent;
+        border-radius: 15px;
+    }
+    .drop{
+        color: rgb(190, 22, 22);
+        border: 2px solid rgb(190, 22, 22) ;
+    }
+    .Upload{
+        color: rgb(22, 190, 50);
+        border: 2px solid rgb(22, 190, 50) ;  
+    }
+    .Addkey{
+        color: rgb(190, 159, 22);
+        border: 2px solid rgb(190, 159, 22) ;  
+    }
+
+.drop:hover{
+transition: .3s;
+    background-color: rgb(190, 22, 22);
+    color: white;
+}
+
+.Upload:hover{
+    transition: .3s;
+    background-color:rgb(22, 190, 50) ;
+    color: white;
 }
 
 }
 
+}
 
+
+}
+
+.KeyPopUp{
+    margin-left: 10em;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(131, 131, 131);
+    width: 30%;
+    border-radius: 15px;
+}
+*/
+.section{
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.InfoTab{
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(225, 225, 225);
+       border-radius: 15px;
+    width: 40%;
+    display: flex;
+    flex-flow: row;
+    padding: 0em 1em;
+    .Left{
+        flex: 0 1 50%;
+    }
+    .Actions{
+        flex: 1 1 50%;
+    }
+
+    .Head{
+    h1{
+        color: rgb(73, 139, 201);
+    }
+    }
+.StockCount{
+    display: flex   ;
+    flex-flow: row;
+    align-items:center ;  
+    gap: 1em;
+    .item{
+        gap: .3em;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+}
+
+.Supply{
+    display: flex;
+   
+    flex-flow: column;
+.SuppItm{
+    margin-top: -2em;
+display: flex;
+align-items: center;
+flex-flow: row;
+gap: 1em;
+
+
+}
+
+}
+
+.Actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    gap: 1em;
+    input{
+        width: 10em;
+        height: 2em;
+        border-radius: 15px;
+        text-align: center;
+        border: 2px solid rgb(59, 92, 242);
+        background-color: rgb(252, 252, 252);
+    }
+    .btns{
+        display: flex;
+        flex-flow: column;
+        gap: 1em;
+        button{
+         
+            width: 10em;
+            height: 3em;
+            background: transparent;
+            border-radius: 15px;
+        }
+        .drop{
+            color: rgb(190, 22, 22);
+            border: 2px solid rgb(190, 22, 22) ;
+        }
+       
+        .Addkey{
+            color: rgb(190, 159, 22);
+            border: 2px solid rgb(190, 159, 22) ;  
+        }
+    
+    .drop:hover{
+    transition: .3s;
+        background-color: rgb(190, 22, 22);
+        color: white;
+    }
+    
+
+    .Addkey:hover{
+        transition: .3s;
+        background-color:rgb(190, 159, 22)   ;
+        color: white;
+    }
+    }
+}
+
+}
+.KeyPop{
+    width: 35%;
+    height: 20vh    ;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+  
+    align-items: center;
+    flex-flow: column;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 14px 11px -3px rgba(176,176,176,0.98);
+    gap: .3em;
+    font-family: "Montserrat", sans-serif;
+    textarea{
+        border-radius: 15px;
+        background-color: rgb(252, 252, 252);
+        border: 2px solid rgb(59, 92, 242) ;
+    }
+
+    button{
+         
+        width: 10em;
+        height: 3em;
+        background: transparent;
+        border-radius: 15px;
+    }
+
+    .Upload{
+        color: rgb(22, 190, 50);
+        border: 2px solid rgb(22, 190, 50) ;  
+    }
+    .Upload:hover{
+        transition: .3s;
+        background-color:rgb(22, 190, 50) ;
+        color: white;
+    }
 }
